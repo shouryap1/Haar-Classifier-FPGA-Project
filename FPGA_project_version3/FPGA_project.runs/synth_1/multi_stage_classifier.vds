@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu Nov  7 21:31:53 2024
-# Process ID: 19268
+# Start of session at: Fri Nov  8 15:55:22 2024
+# Process ID: 12280
 # Current directory: C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1
 # Command line: vivado.exe -log multi_stage_classifier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multi_stage_classifier.tcl
 # Log file: C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/multi_stage_classifier.vds
@@ -11,6 +11,7 @@
 # Running On: DESKTOP-GO405I8, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 6, Host memory: 16944 MB
 #-----------------------------------------------------------
 source multi_stage_classifier.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 381.797 ; gain = 44.797
 Command: read_checkpoint -auto_incremental -incremental {C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/utils_1/imports/synth_1/feature_architecture.dcp}
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/utils_1/imports/synth_1/feature_architecture.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -23,7 +24,7 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 8252
+INFO: [Synth 8-7075] Helper process launched with PID 6052
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 CRITICAL WARNING: [Synth 8-9339] data object 'i' is already declared [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:62]
 INFO: [Synth 8-6826] previous declaration of 'i' is from here [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:44]
@@ -32,18 +33,18 @@ CRITICAL WARNING: [Synth 8-9339] data object 'cycles' is already declared [C:/Us
 INFO: [Synth 8-6826] previous declaration of 'cycles' is from here [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:45]
 CRITICAL WARNING: [Synth 8-11152] second declaration of 'cycles' is ignored [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:62]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1222.578 ; gain = 407.141
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1222.285 ; gain = 407.727
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'multi_stage_classifier' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:23]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:73]
-INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/ila_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/ila_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/blk_mem_gen_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/blk_mem_gen_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/blk_mem_gen_1_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/blk_mem_gen_1_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/blk_mem_gen_2_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/blk_mem_gen_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-12280-DESKTOP-GO405I8/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-12280-DESKTOP-GO405I8/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-12280-DESKTOP-GO405I8/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-12280-DESKTOP-GO405I8/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-12280-DESKTOP-GO405I8/realtime/blk_mem_gen_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-12280-DESKTOP-GO405I8/realtime/blk_mem_gen_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-12280-DESKTOP-GO405I8/realtime/blk_mem_gen_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-12280-DESKTOP-GO405I8/realtime/blk_mem_gen_2_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'weighted_area' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/weighted_area.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'weighted_area' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/weighted_area.v:23]
 INFO: [Synth 8-6157] synthesizing module 'weak_classifier' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/weak_classifier.v:23]
@@ -58,18 +59,18 @@ WARNING: [Synth 8-3848] Net dina1 in module/entity multi_stage_classifier does n
 WARNING: [Synth 8-3848] Net dina2 in module/entity multi_stage_classifier does not have driver. [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:53]
 WARNING: [Synth 8-3848] Net dina0 in module/entity multi_stage_classifier does not have driver. [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:53]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1316.770 ; gain = 501.332
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1317.215 ; gain = 502.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1316.770 ; gain = 501.332
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1317.215 ; gain = 502.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1316.770 ; gain = 501.332
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1317.215 ; gain = 502.656
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1316.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1317.215 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -83,29 +84,31 @@ Finished Parsing XDC File [c:/Users/Barath S Narayan/Vivado/FPGA_project_version
 Parsing XDC File [c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_name'
 Finished Parsing XDC File [c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_name'
 Parsing XDC File [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/constrs_1/new/constraints1.xdc]
-INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/constrs_1/new/constraints1.xdc:1]
 Finished Parsing XDC File [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/constrs_1/new/constraints1.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/constrs_1/new/constraints1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/multi_stage_classifier_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/multi_stage_classifier_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1334.105 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1354.547 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1334.105 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1354.547 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'block_memory_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'block_memory_1' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'block_memory_2' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1334.105 ; gain = 518.668
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1357.691 ; gain = 543.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1334.105 ; gain = 518.668
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1357.691 ; gain = 543.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -115,10 +118,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for block_memory_1. (constraint file 
 Applied set_property KEEP_HIERARCHY = SOFT for block_memory_2. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for ila_name. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1334.105 ; gain = 518.668
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1357.691 ; gain = 543.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1334.105 ; gain = 518.668
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1357.691 ; gain = 543.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -172,7 +175,7 @@ DSP Report: Generating DSP w2/out_reg, operation Mode is: (A*B)'.
 DSP Report: register w2/out_reg is absorbed into DSP w2/out_reg.
 DSP Report: operator w2/out0 is absorbed into DSP w2/out_reg.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1334.105 ; gain = 518.668
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1357.691 ; gain = 543.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -195,19 +198,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1355.695 ; gain = 540.258
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1357.691 ; gain = 543.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1355.695 ; gain = 540.258
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1366.480 ; gain = 551.922
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1375.285 ; gain = 559.848
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1376.066 ; gain = 561.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -327,37 +330,37 @@ CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_1 has unconnected 
 INFO: [Common 17-14] Message 'Synth 8-4442' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:222]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1386.477 ; gain = 571.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1386.477 ; gain = 571.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1386.477 ; gain = 571.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1386.477 ; gain = 571.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1386.477 ; gain = 571.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1386.477 ; gain = 571.918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -402,28 +405,27 @@ Report Cell Usage:
 |15    |IBUF        |     1|
 +------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1386.477 ; gain = 571.918
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 288 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1385.754 ; gain = 552.980
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1386.477 ; gain = 531.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:35 . Memory (MB): peak = 1386.477 ; gain = 571.918
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1385.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1386.477 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1402.484 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1402.184 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete, checksum: 870b3e38
 INFO: [Common 17-83] Releasing license: Synthesis
-43 Infos, 9 Warnings, 104 Critical Warnings and 0 Errors encountered.
+42 Infos, 12 Warnings, 104 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.statsThreshold
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 1402.184 ; gain = 965.410
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/multi_stage_classifier.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file multi_stage_classifier_utilization_synth.rpt -pb multi_stage_classifier_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 21:32:46 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 15:56:12 2024...

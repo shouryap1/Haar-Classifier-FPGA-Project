@@ -70,12 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.statsThreshold 360
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 3
-set_param synth.incrementalSynthesisCache {C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/.Xil/Vivado-7896-DESKTOP-GO405I8/incrSyn}
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -109,7 +104,7 @@ set_property used_in_implementation false [get_files -all {{c:/Users/Barath S Na
 read_ip -quiet {{C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc}}]
 
-read_ip -quiet {{c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/ip/ila_0/ila_0.xci}}
+read_ip -quiet {{C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/ip/ila_0/ila_0.xci}}
 set_property used_in_synthesis false [get_files -all {{c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc}}]

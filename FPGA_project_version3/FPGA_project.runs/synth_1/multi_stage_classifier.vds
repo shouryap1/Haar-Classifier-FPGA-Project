@@ -1,0 +1,429 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Nov  7 21:31:53 2024
+# Process ID: 19268
+# Current directory: C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1
+# Command line: vivado.exe -log multi_stage_classifier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multi_stage_classifier.tcl
+# Log file: C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/multi_stage_classifier.vds
+# Journal file: C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1\vivado.jou
+# Running On: DESKTOP-GO405I8, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 6, Host memory: 16944 MB
+#-----------------------------------------------------------
+source multi_stage_classifier.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/utils_1/imports/synth_1/feature_architecture.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/utils_1/imports/synth_1/feature_architecture.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top multi_stage_classifier -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8252
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+CRITICAL WARNING: [Synth 8-9339] data object 'i' is already declared [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:62]
+INFO: [Synth 8-6826] previous declaration of 'i' is from here [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:44]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'i' is ignored [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:62]
+CRITICAL WARNING: [Synth 8-9339] data object 'cycles' is already declared [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:62]
+INFO: [Synth 8-6826] previous declaration of 'cycles' is from here [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:45]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'cycles' is ignored [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:62]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1222.578 ; gain = 407.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'multi_stage_classifier' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:73]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/ila_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/blk_mem_gen_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/blk_mem_gen_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/blk_mem_gen_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/blk_mem_gen_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/.Xil/Vivado-19268-DESKTOP-GO405I8/realtime/blk_mem_gen_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'weighted_area' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/weighted_area.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'weighted_area' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/weighted_area.v:23]
+INFO: [Synth 8-6157] synthesizing module 'weak_classifier' [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/weak_classifier.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'weak_classifier' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/weak_classifier.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'multi_stage_classifier' (0#1) [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:23]
+WARNING: [Synth 8-6014] Unused sequential element sum1_reg was removed.  [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/weighted_area.v:34]
+WARNING: [Synth 8-6014] Unused sequential element sum2_reg was removed.  [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/weighted_area.v:35]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_name'. This will prevent further optimization [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:73]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'wc1'. This will prevent further optimization [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:122]
+WARNING: [Synth 8-6014] Unused sequential element address_counter_reg was removed.  [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:207]
+WARNING: [Synth 8-3848] Net dina1 in module/entity multi_stage_classifier does not have driver. [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:53]
+WARNING: [Synth 8-3848] Net dina2 in module/entity multi_stage_classifier does not have driver. [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:53]
+WARNING: [Synth 8-3848] Net dina0 in module/entity multi_stage_classifier does not have driver. [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1316.770 ; gain = 501.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1316.770 ; gain = 501.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1316.770 ; gain = 501.332
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1316.770 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'block_memory_0'
+Finished Parsing XDC File [c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'block_memory_0'
+Parsing XDC File [c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'block_memory_1'
+Finished Parsing XDC File [c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'block_memory_1'
+Parsing XDC File [c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'block_memory_2'
+Finished Parsing XDC File [c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'block_memory_2'
+Parsing XDC File [c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_name'
+Finished Parsing XDC File [c:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_name'
+Parsing XDC File [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/constrs_1/new/constraints1.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/constrs_1/new/constraints1.xdc:1]
+Finished Parsing XDC File [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/constrs_1/new/constraints1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/constrs_1/new/constraints1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/multi_stage_classifier_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/multi_stage_classifier_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1334.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1334.105 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1334.105 ; gain = 518.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1334.105 ; gain = 518.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for block_memory_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for block_memory_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for block_memory_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ila_name. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1334.105 ; gain = 518.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1334.105 ; gain = 518.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   28 Bit       Adders := 1     
+	   3 Input   20 Bit       Adders := 1     
+	   5 Input   18 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 3     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   28 Bit        Muxes := 2     
+	   2 Input   18 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP w0/out_reg, operation Mode is: (A*B)'.
+DSP Report: register w0/out_reg is absorbed into DSP w0/out_reg.
+DSP Report: operator w0/out0 is absorbed into DSP w0/out_reg.
+DSP Report: Generating DSP w1/out_reg, operation Mode is: (A*B)'.
+DSP Report: register w1/out_reg is absorbed into DSP w1/out_reg.
+DSP Report: operator w1/out0 is absorbed into DSP w1/out_reg.
+DSP Report: Generating DSP w2/out_reg, operation Mode is: (A*B)'.
+DSP Report: register w2/out_reg is absorbed into DSP w2/out_reg.
+DSP Report: operator w2/out0 is absorbed into DSP w2/out_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1334.105 ; gain = 518.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|weighted_area | (A*B)'      | 18     | 16     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|weighted_area | (A*B)'      | 18     | 16     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|weighted_area | (A*B)'      | 18     | 16     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 1    | 0    | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1355.695 ; gain = 540.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1355.695 ; gain = 540.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 1375.285 ; gain = 559.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[95]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[94]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[93]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[92]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[91]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[90]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[89]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[88]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[87]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[86]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[85]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[84]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[83]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[82]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[81]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[80]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[79]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[78]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[77]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[76]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[75]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[74]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[73]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[72]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[71]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[70]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[69]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[68]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[67]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[66]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[65]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[64]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[63]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[62]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[61]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[60]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[59]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[58]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[57]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[56]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[55]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[54]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[53]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[52]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[51]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[50]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[49]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[48]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[47]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[46]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[45]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[44]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[43]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[42]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[41]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[40]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[39]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[38]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[37]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[36]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[35]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[34]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[33]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[32]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_0 has unconnected pin dina[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_1 has unconnected pin dina[95]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_1 has unconnected pin dina[94]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_1 has unconnected pin dina[93]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module block_memory_1 has unconnected pin dina[92]
+INFO: [Common 17-14] Message 'Synth 8-4442' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.srcs/sources_1/new/multi_stage_classifier.v:222]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|weighted_area | (A*B)'      | 18     | 16     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|weighted_area | (A*B)'      | 18     | 16     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|weighted_area | (A*B)'      | 18     | 16     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
+|2     |blk_mem_gen_0 |         1|
+|3     |blk_mem_gen_1 |         1|
+|4     |blk_mem_gen_2 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     3|
+|4     |ila         |     1|
+|5     |BUFG        |     1|
+|6     |CARRY4      |    34|
+|7     |DSP48E1     |     3|
+|8     |LUT1        |    31|
+|9     |LUT2        |    34|
+|10    |LUT3        |    88|
+|11    |LUT4        |    73|
+|12    |LUT5        |    51|
+|13    |LUT6        |    53|
+|14    |FDRE        |    84|
+|15    |IBUF        |     1|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 288 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1385.754 ; gain = 552.980
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1385.754 ; gain = 570.316
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1385.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1402.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 870b3e38
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 9 Warnings, 104 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Barath S Narayan/Vivado/FPGA_project_version3/FPGA_project.runs/synth_1/multi_stage_classifier.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file multi_stage_classifier_utilization_synth.rpt -pb multi_stage_classifier_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 21:32:46 2024...
